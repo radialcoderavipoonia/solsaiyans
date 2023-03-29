@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solsaiyans</title>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- root css  -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- slick slider css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <button onclick="backToTop()" id="topbtn" class="position-fixed backToTop border-0 z-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square "
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </button>
+    <header class="her_bg_img d-flex flex-column h_100vh h_110vh_1440">
+        <nav class="">
+            <div class="container py-3">
+                <div class="d-flex align-items-center justify-content-between py-4">
+
+                    <img src="./assets/images/png/header_logo.png" alt="nav logo">
+
+
+                    <div id="showul"
+                        class="d-flex flex-lg-row flex-column align-items-center gap_68 gap-5 w-100 justify-content-lg-end overflow-x-hidden mobview transition_nav">
+                        <ul class="d-flex flex-lg-row flex-column mb-0 gap_68 gap-5 ps-0 align-items-center">
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Home</a></li>
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Fighter</a></li>
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Roadmap</a></li>
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Team</a></li>
+                            <button class="color_white fs_18 fw_600 btn_connect br_24 me-1">
+                                Connect Wallet
+                            </button>
+                        </ul>
+
+
+                    </div>
+                    <div class="menuicon" id="shownav" onclick="shownav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="d-flex flex-grow-1 align-items-center overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-lg-row pb-5">
+                    <div class="col-lg-6 col-12 z-2">
+                        <h2 class="fw_700 fs_72 color_white mb-4 lh_86 lh_1440_normal">Non ut<span class="color_red">
+                                aliquet
+                                lacus</span>
+                            arcu aryuv testwf.</h2>
+                        <p class="fw_400 fs_24 color_white opacity-75 mt-2 mb-4 lh_43 lh_1440_normal">At suspendisse
+                            tellus at pretium
+                            arcu
+                            turpis. Enim convallis sed tortor faucibus amet ipsum at lacus ultrices. Donec
+                            nibh viverra odio convallis.</p>
+                        <div class="d-flex align-items-center gap_40 pt-3">
+                            <button class="btn_connect fs_24 color_white fw_600 br_34">Mint Now</button>
+                            <a href="#" class="fw_400 fs_24 color_white">Learn more</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 opacity_5 position-relative left_4 top_15 ">
+                        <img src="./assets/images/png/hero_last_bg.png" alt="hero blue last"
+                            class="w-100 position-absolute bottom_-380 left_10">
+                        <img src="./assets/images/png/hero_back_bg.png" alt="hero back"
+                            class="w-100  position-absolute top_-350 left_10 image_bright">
+                        <div class="image_change position-absolute top_-295 left_10">
+                            <img src="./assets/images/png/hero_img.png" alt="hero section image"
+                                class="w-100 opacity-0">
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- story section  -->
+    <section class="bg_black position-relative">
+        <div class="container">
+            <div class="story_box p-5 position-relative top_-100 z-1">
+                <div class="padding_3_side">
+                    <h2 class="fw_700 color_white fs_48 m-0">The Story</h2>
+                    <div class="row justify-content-between pt_31">
+                        <div class="col-md-6 col-12 ">
+                            <p class="fw_400 fs_18 color_white m-0 lh_32 lh_1440_normal">Neque cras adipiscing id id eu.
+                                Nisl leo donec
+                                mattis leo consectetur at nunc id. Nulla
+                                pharetra dolor sit quis donec
+                                tristique proin. Nulla quis magna tristique nisi eu at morbi. Malesuada lorem commodo
+                                ultrices morbi magna dictum congue
+                                nec.</p>
+                        </div>
+                        <div class="col-md-6 col-12 pt-md-0 pt-4">
+                            <p class="fw_400 fs_18 color_white m-0 lh_32 lh_1440_normal">Neque cras adipiscing id id eu.
+                                Nisl leo donec
+                                mattis leo consectetur at nunc id. Nulla
+                                pharetra dolor sit quis donec
+                                tristique proin. Nulla quis magna tristique nisi eu at morbi. Malesuada lorem commodo
+                                ultrices morbi magna dictum congue
+                                nec.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- slider  -->
+        <div class="position-relative">
+            <div class="d-flex slider1 center slick-list">
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide1.png" alt="slide 1" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0 ">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide2.png" alt="slide 2" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide3.png" alt="slide 3" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide4.png" alt="slide 4" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide5.png" alt="slide 5" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide6.png" alt="slide 6" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center ">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide7.png" alt="slide 7" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0 ">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/slide1.png" alt="slide 1" class="w-100">
+                    <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0 ">Super SolaSaiyan</h2>
+                    <div class="d-flex pt-2">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                
+                    </div>
+                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- red bg  -->
+        <div class="pt-5 pb-5">
+            <div class="row pt-5 justify-content-between align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="position-relative">
+
+                        <img src="./assets/images/png/red_img.png" alt="red ninja image"
+                            class="w-100 h-100 position-relative z-1 image_bright">
+                        <div class="position-absolute top-0 ">
+                            <img src="./assets/images/png/red_bg.png" alt="red background shape" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 pt-5 pt-lg-0">
+                    <h2 class="fw_700 fs_48 color_white lh_66 lh_1440_normal m-0">Ante tempor,<span class="color_red">
+                            neque
+                            scelerisque </span> sit viverra.</h2>
+                    <p class="fw_400 fs_18 color_white lh_32 lh_1440_normal pt-4 m-0">Viverra in morbi urna neque
+                        sollicitudin
+                        venenatis quam facilisis vivamus. Massa risus placerat lectus at nisl eleifend.
+                        Lorem consectetur diam at ut leo. Id lacus blandit integer suscipit arcu nisl nisl, nunc
+                        dictum. Viverra elit mauris
+                        tempor sit id. Viverra suspendisse lorem semper sit massa in neque scelerisque. Magna orci,
+                        id porttitor eu vitae arcu
+                        est ullamcorper. Tortor, vehicula lectus eu quis a nulla vehicula imperdiet vulputate.
+                        Ultricies malesuada habitasse id
+                        ornare id. Vel diam consequat platea morbi duis. Faucibus egestas nibh libero placerat
+                        placerat fusce nunc, nunc.
+                        Vivamus nibh blandit mattis tellus dui. Pharetra gravida sollicitudin praesent cursus odio
+                        enim risus.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- timeline  -->
+        <div class="pt-5 pb-5">
+            <div class="timeline_t ">
+                <div class="container_t right_t ">
+                    <div class="content_t">
+                        <h2 class="fw_600 fs_36 color_white lh_54 text-start text_start lh_1440_normal m-0">Milestone 1
+                        </h2>
+                        <p class="fw_400 fs_18 lh_32 color_white pt-2 text-start lh_1440_normal text_start m-0">Eget
+                            aliquam feugiat
+                            eget amet sem.
+                            Et in hendrerit purus at accumsan elementum non volutpate.</p>
+                    </div>
+                </div>
+                <div class="container_t left_t mt-5">
+                    <div class="content_t">
+                        <h2 class="fw_600 fs_36 color_white lh_54 text-end lh_1440_normal text_start m-0">Milestone 1
+                        </h2>
+                        <p class="fw_400 fs_18 lh_32 color_white pt-2 text-end text_start lh_1440_normal m-0">Eget
+                            aliquam feugiat eget
+                            amet sem.
+                            Et in hendrerit purus at accumsan
+                            elementum non volutpate.</p>
+                    </div>
+                </div>
+                <div class="container_t right_t mt-5">
+                    <div class="content_t">
+                        <h2 class="fw_600 fs_36 color_white lh_54 text-start text_start lh_1440_normal m-0">Milestone 1
+                        </h2>
+                        <p class="fw_400 fs_18 lh_32 color_white pt-2 text-start text_start lh_1440_normal m-0">Eget
+                            aliquam feugiat
+                            eget amet sem.
+                            Et in hendrerit purus at accumsan
+                            elementum non volutpate.</p>
+                    </div>
+                </div>
+                <div class="container_t left_t mt-5">
+                    <div class="content_t">
+                        <h2 class="fw_600 fs_36 color_white lh_54 text-end text_start m-0 lh_1440_normal">Milestone 1
+                        </h2>
+                        <p class="fw_400 fs_18 lh_32 color_white pt-2 text-end text_start lh_1440_normal m-0">Eget
+                            aliquam feugiat eget
+                            amet sem.
+                            Et in hendrerit purus at accumsan
+                            elementum non volutpate.</p>
+                    </div>
+                </div>
+                <div class="container_t right_t mt-5">
+                    <div class="content_t">
+                        <h2 class="fw_600 fs_36 color_white lh_54 text-start text_start lh_1440_normal m-0">Milestone 1
+                        </h2>
+                        <p class="fw_400 fs_18 lh_32 color_white pt-2 text-start text_start lh_1440_normal m-0">Eget
+                            aliquam feugiat
+                            eget amet sem.
+                            Et in hendrerit purus at accumsan
+                            elementum non volutpate.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- our team  -->
+        <div class="container">
+            <div class="pt-5 mt-5 pb-5">
+                <h2 class="color_white text-center ff_700 fs_48 lh_66">Our Team</h2>
+            </div>
+            <div class="d-flex justify-content-between align-items-center overflow_our_team w-100">
+
+                <div class="mx-2 text-center image_bright mw_300 h-100">
+                    <img src="./assets/images/png/our_team_img_1.png" alt="our team img 1"
+                        class="w_250 h_306 object-fit-cover">
+                    <h2 class="fw_600 fs_36 lh_54 color_white text-center m-0 pt-3 ">Member Name</h2>
+                    <p class="fw_400 fs_18 lh_32 color_white text-center m-0 pt-2 ">Designation</p>
+                </div>
+
+
+                <div class="mx-2 text-center image_bright mw_300 h-100">
+                    <img src="./assets/images/png/our_team_img_2.png" alt="our team img 2"
+                        class="w_250 h_306 object-fit-cover">
+                    <h2 class="fw_600 fs_36 lh_54 color_white text-center m-0 pt-3 ">Member Name</h2>
+                    <p class="fw_400 fs_18 lh_32 color_white text-center m-0 pt-2 ">Designation</p>
+                </div>
+
+
+                <div class="mx-2 text-center image_bright mw_300 h-100">
+                    <img src="./assets/images/png/our_team_img_3.png" alt="our team img 3"
+                        class="w_250 h_306 object-fit-cover">
+                    <h2 class="fw_600 fs_36 lh_54 color_white text-center m-0 pt-3 ">Member Name</h2>
+                    <p class="fw_400 fs_18 lh_32 color_white text-center m-0 pt-2 ">Designation</p>
+                </div>
+
+
+                <div class="mx-2 text-center image_bright mw_300 h-100">
+                    <img src="./assets/images/png/our_team_img_4.png" alt="our team img 4"
+                        class="w_250 h_306 object-fit-cover">
+                    <h2 class="fw_600 fs_36 lh_54 color_white text-center m-0 pt-3 ">Member Name</h2>
+                    <p class="fw_400 fs_18 lh_32 color_white text-center m-0 pt-2 ">Designation</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- accordiant  -->
+        <div class="container">
+            <div class="py-4 mt-5">
+                <h2 class="fw_700 fs_48 color_white lh_66 m-0">FAQs</h2>
+            </div>
+            <div class="pb-5 ">
+                <div class="accordion position-relative z-2" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw_600 fs_18 lh_22 bg_black color_white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in. Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in. Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in. Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in.
+                                    Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi
+                                    porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                aria-expanded="false" aria-controls="collapseFive">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in.
+                                    Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi
+                                    porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                aria-expanded="false" aria-controls="collapseSix">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in.
+                                    Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi
+                                    porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                aria-expanded="false" aria-controls="collapseSeven">
+                                Laoreet placerat est arcu, integer aliquam.
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw_400 fs_18 color_white lh_32 opacity_7 lh_1440_normal">Praesent id sem
+                                    blandit urna,
+                                    interdum egestas
+                                    varius in. Venenatis vel, egestas adipiscing elementum in.
+                                    Orci, quis sit
+                                    neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                                    elementum, cras
+                                    morbi
+                                    porttitor.
+                                    Mattis malesuada a, feugiat vitae massa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logos  -->
+        <div class="container">
+            <div class="py-5 text-center">
+                <img src="./assets/images/png/SOLSAIYANS.png" alt="solsaiyans logo" class="w_50">
+            </div>
+            <div class="d-flex gap_30 justify-content-center">
+                <img src="./assets/images/png/twitter.png" alt="twitter logo">
+                <img src="./assets/images/png/DISCORD.png" alt="discord logo">
+            </div>
+            <div class="d-flex gap_30 justify-content-center pt-4 pb-5">
+                <p><a href="#" class="fw_400 fs_18 color_white opacity_7 lh_32">Privacy Policy </a></p>
+                <p><a href="#" class="fw_400 fs_18 color_white opacity_7 lh_32"> Terms</a></p>
+            </div>
+        </div>
+        <div class="position-absolute left_110 top_152 d-lg-block d-none">
+            <img src="./assets/images/png/story_down_design.png" alt="story left down design" class="w_70 dis_none_992">
+        </div>
+        <div class="position-absolute top_47 left_-5">
+            <img src="./assets/images/png/timeline_left.png" alt="timeline left design" class="w_70 dis_none_1440">
+        </div>
+        <div class="position-absolute top_54 right_-13">
+            <img src="./assets/images/png/timeline_right.png" alt="timeline right design" class="w_70 dis_none_992">
+        </div>
+        <div class="position-absolute top_62  left_-85">
+            <img src="./assets/images/png/our_team_top.png" alt="our team top design" class="w_70 dis_none_992">
+        </div>
+        <div class="position-absolute top_77 right_-20 ">
+            <img src="./assets/images/png/faq_right.png" alt="faq right design" class="w-100 dis_none_1200">
+        </div>
+        <div class="position-absolute top_86 left_-70 ">
+            <img src="./assets/images/png/faq_left.png" alt="faq left design" class="w_70 dis_none_1200">
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <!-- slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '100px',
+            slidesToShow: 5,
+            autoplay: true,
+            autoplaySpeed: 800,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+
+        const topbtn = document.getElementById('topbtn');
+
+
+        window.onscroll = function () { topscroll() };
+
+        function topscroll() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topbtn.style.display = "block";
+            }
+            else {
+                topbtn.style.display = "none";
+            }
+        }
+
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+    <script>
+        function shownav() {
+            document.getElementById("showul").classList.toggle("nav_left0")
+            document.body.classList.toggle("overflow-hidden")
+        }
+    </script>
+</body>
+
+</html>
