@@ -79,7 +79,7 @@
 @media (max-width:1440px) {
     :root {
             /* font sizes  */
-            --fs-xsm: 16px;
+            --fs-xsm: 12px;
             --fs-sm: 16px;
             --fs-md: 20px;
             --fs-lg: 32px;

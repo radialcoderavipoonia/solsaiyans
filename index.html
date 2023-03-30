@@ -21,32 +21,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./assets/images/png/favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
     <button onclick="backToTop()" id="topbtn" class="position-fixed backToTop border-0 z-3 ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square "
-            viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+            class="bi bi-arrow-up-square " viewBox="0 0 16 16">
             <path fill-rule="evenodd"
                 d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
         </svg>
     </button>
-    <header class="her_bg_img d-flex flex-column h_100vh h_110vh_1440">
+    <header class="her_bg_img d-flex flex-column h_100vh h_110 vh_1440">
         <nav class="">
             <div class="container py-3">
-                <div class="d-flex align-items-center justify-content-between py-4">
-
-                    <img src="./assets/images/png/header_logo.png" alt="nav logo">
-
+                <div class="d-flex align-items-center justify-content-between py-4 ">
+                    <a href="#"><img src="./assets/images/png/header_logo.png" alt="nav logo" class="main_logo"></a>
 
                     <div id="showul"
                         class="d-flex flex-lg-row flex-column align-items-center gap_68 gap-5 w-100 justify-content-lg-end overflow-x-hidden mobview transition_nav">
                         <ul class="d-flex flex-lg-row flex-column mb-0 gap_68 gap-5 ps-0 align-items-center">
-                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Home</a></li>
-                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Fighter</a></li>
-                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Roadmap</a></li>
-                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0" href="#">Team</a></li>
-                            <button class="color_white fs_18 fw_600 btn_connect br_24 me-1">
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0"
+                                    href="#">Home</a></li>
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0"
+                                    href="#">Fighter</a></li>
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0"
+                                    href="#">Roadmap</a></li>
+                            <li class=""><a class="fw_600 fs_18 color_white underline position-relative m-0"
+                                    href="#">Team</a></li>
+                            <button class="color_white color_change hover fs_18 fw_600 btn_connect br_24 me-1 mb-1">
                                 Connect Wallet
                             </button>
                         </ul>
@@ -63,7 +70,7 @@
         </nav>
         <section class="d-flex flex-grow-1 align-items-center overflow-hidden">
             <div class="container">
-                <div class="row align-items-center flex-column-reverse flex-lg-row pb-5">
+                <div class="row align-items-center flex-column-reverse flex-lg-row pb-5 ">
                     <div class="col-lg-6 col-12 z-2">
                         <h2 class="fw_700 fs_72 color_white mb-4 lh_86 lh_1440_normal">Non ut<span class="color_red">
                                 aliquet
@@ -75,8 +82,9 @@
                             turpis. Enim convallis sed tortor faucibus amet ipsum at lacus ultrices. Donec
                             nibh viverra odio convallis.</p>
                         <div class="d-flex align-items-center gap_40 pt-3">
-                            <button class="btn_connect fs_24 color_white fw_600 br_34">Mint Now</button>
-                            <a href="#" class="fw_400 fs_24 color_white">Learn more</a>
+                            <button class="btn_connect fs_24 color_white color_change fw_600 br_34 hover">Mint
+                                Now</button>
+                            <a href="#" class="fw_400 fs_24 color_white underline position-relative">Learn more</a>
 
                         </div>
                     </div>
@@ -100,9 +108,9 @@
     <!-- story section  -->
     <section class="bg_black position-relative">
         <div class="container">
-            <div class="story_box p-5 position-relative top_-100 z-1">
+            <div class="story_box p-5 position-relative top_-152 z-1">
                 <div class="padding_3_side">
-                    <h2 class="fw_700 color_white fs_48 m-0">The Story</h2>
+                    <h2 class="fw_700 color_white fs_48 m-0 ">The Story</h2>
                     <div class="row justify-content-between pt_31">
                         <div class="col-md-6 col-12 ">
                             <p class="fw_400 fs_18 color_white m-0 lh_32 lh_1440_normal">Neque cras adipiscing id id eu.
@@ -131,91 +139,107 @@
         <div class="position-relative">
             <div class="d-flex slider1 center slick-list">
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide1.png" alt="slide 1" class="w-100">
+                    <img src="./assets/images/png/slide1.png" alt="slide 1" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0 ">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
+                    <div class="d-flex pt-2 justify-content-center ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
 
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change fw_600 fs_18 color_white d-none hover d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide2.png" alt="slide 2" class="w-100">
+                    <img src="./assets/images/png/slide2.png" alt="slide 2" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change hover fw_600 fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide3.png" alt="slide 3" class="w-100">
+                    <img src="./assets/images/png/slide3.png" alt="slide 3" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center  ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change fw_600 hover fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide4.png" alt="slide 4" class="w-100">
+                    <img src="./assets/images/png/slide4.png" alt="slide 4" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change hover fw_600 fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide5.png" alt="slide 5" class="w-100">
+                    <img src="./assets/images/png/slide5.png" alt="slide 5" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change hover fw_600 fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide6.png" alt="slide 6" class="w-100">
+                    <img src="./assets/images/png/slide6.png" alt="slide 6" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center ">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center  ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change hover fw_600 fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide7.png" alt="slide 7" class="w-100">
+                    <img src="./assets/images/png/slide7.png" alt="slide 7" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0 ">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center  ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change hover fw_600 fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
                 <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/slide1.png" alt="slide 1" class="w-100">
+                    <img src="./assets/images/png/slide1.png" alt="slide 1" class="w-100 ">
                     <h2 class="fw_600 fs_24 color_white pt-4 text-center m-0 ">Super SolaSaiyan</h2>
-                    <div class="d-flex pt-2">
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">457/500</p>
-                        <p class="fs_18 fw_400 color_white d-none d_block m-0">0.04 ETH</p>
-                
+                    <div class="d-flex pt-2 justify-content-center  ">
+                        <p class="fs_18 fw_400 color_white d-none d_block m-0 text-center">457/500 0.04 ETH</p>
+
+
                     </div>
-                    <button class="p_10_24 mt-4 mb-2 btn_SLIDER1 fw_600 fs_18 color_white d-none d_block">Min Now</button>
+                    <button
+                        class="p_10_24 mt-4 mb-2 btn_SLIDER1 color_change hover fw_600 fs_18 color_white d-none d_block">Min
+                        Now</button>
                 </div>
             </div>
         </div>
         <!-- red bg  -->
         <div class="pt-5 pb-5">
-            <div class="row pt-5 justify-content-between align-items-center">
-                <div class="col-lg-6 col-12">
+            <div class="row pt-5 justify-content-between align-items-center ">
+                <div class="col-lg-6 col-12" data-aos="flip-left">
                     <div class="position-relative">
 
                         <img src="./assets/images/png/red_img.png" alt="red ninja image"
@@ -225,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-12 pt-5 pt-lg-0">
+                <div class="col-lg-5 col-12 pt-5 pt-lg-0" data-aos="flip-right">
                     <h2 class="fw_700 fs_48 color_white lh_66 lh_1440_normal m-0">Ante tempor,<span class="color_red">
                             neque
                             scelerisque </span> sit viverra.</h2>
@@ -250,7 +274,7 @@
 
 
         <!-- timeline  -->
-        <div class="pt-5 pb-5">
+        <div class="pt-5 pb-5" data-aos="zoom-out">
             <div class="timeline_t ">
                 <div class="container_t right_t ">
                     <div class="content_t">
@@ -312,9 +336,9 @@
         <!-- our team  -->
         <div class="container">
             <div class="pt-5 mt-5 pb-5">
-                <h2 class="color_white text-center ff_700 fs_48 lh_66">Our Team</h2>
+                <h2 class="color_white text-center ff_700 fs_48 lh_66 ">Our Team</h2>
             </div>
-            <div class="d-flex justify-content-between align-items-center overflow_our_team w-100">
+            <div class="d-flex justify-content-between align-items-center overflow_our_team w-100" data-aos="zoom-in">
 
                 <div class="mx-2 text-center image_bright mw_300 h-100">
                     <img src="./assets/images/png/our_team_img_1.png" alt="our team img 1"
@@ -351,12 +375,12 @@
         </div>
         <!-- accordiant  -->
         <div class="container">
-            <div class="py-4 mt-5">
-                <h2 class="fw_700 fs_48 color_white lh_66 m-0">FAQs</h2>
+            <div class="py-4 mt-5 ">
+                <h2 class="fw_700 fs_48 color_white lh_66 m-0 ">FAQs</h2>
             </div>
             <div class="pb-5 ">
                 <div class="accordion position-relative z-2" id="accordionExample">
-                    <div class="accordion-item">
+                    <div class="accordion-item " data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button fw_600 fs_18 lh_22 bg_black color_white" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
@@ -378,7 +402,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
@@ -399,7 +423,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
@@ -420,7 +444,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
@@ -443,7 +467,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
@@ -466,7 +490,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
@@ -489,7 +513,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item" data-aos="fade-up" data-aos-duration="2000">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed  fw_600 fs_18 lh_22 bg_black color_white"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
@@ -518,11 +542,12 @@
         <!-- logos  -->
         <div class="container">
             <div class="py-5 text-center">
-                <img src="./assets/images/png/SOLSAIYANS.png" alt="solsaiyans logo" class="w_50">
+                <a href="#"><img src="./assets/images/png/SOLSAIYANS.png" alt="solsaiyans logo"
+                        class="w_50 main_logo"></a>
             </div>
             <div class="d-flex gap_30 justify-content-center">
-                <img src="./assets/images/png/twitter.png" alt="twitter logo">
-                <img src="./assets/images/png/DISCORD.png" alt="discord logo">
+                <a href="#"><img src="./assets/images/png/twitter.png" alt="twitter logo" class="social_logo "></a>
+                <a href="#"><img src="./assets/images/png/DISCORD.png" alt="discord logo" class="social_logo "></a>
             </div>
             <div class="d-flex gap_30 justify-content-center pt-4 pb-5">
                 <p><a href="#" class="fw_400 fs_18 color_white opacity_7 lh_32">Privacy Policy </a></p>
@@ -586,7 +611,7 @@
             autoplaySpeed: 800,
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 1350,
                     settings: {
                         arrows: false,
                         centerMode: true,
@@ -595,7 +620,25 @@
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 968,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 450,
                     settings: {
                         arrows: false,
                         centerMode: true,
@@ -635,6 +678,10 @@
             document.getElementById("showul").classList.toggle("nav_left0")
             document.body.classList.toggle("overflow-hidden")
         }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
