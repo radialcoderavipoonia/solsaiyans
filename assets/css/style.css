@@ -33,6 +33,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+ 
 }
 
 
@@ -41,6 +42,14 @@ html {
     background-image: url(../images/png/hero_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.nav_bg {
+    background-image: url(../images/png/hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 11;
 }
 
 .btn_connect {
@@ -197,6 +206,18 @@ html {
 
 .left_18 {
     left: 18px;
+}
+
+.left_0 {
+    left: 0;
+}
+
+.right_0 {
+    right: 0;
+}
+
+.top_-2 {
+    top: -2%;
 }
 
 .backToTop {
@@ -363,6 +384,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0px 0px 52px rgba(244, 232, 3, 0.61);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -714,7 +736,7 @@ html {
         flex-direction: column;
         justify-content: center;
         position: fixed;
-        top: 79px;
+        top: 99px;
         align-items: center;
         width: 100%;
         background: url(../images/png/hero_bg.png);
@@ -726,12 +748,14 @@ html {
         z-index: 3;
     }
 
+
     .transition_nav {
         transition: all 1s ease-in-out;
     }
 
     .nav_left0 {
         left: 0;
+
     }
 
     .menuicon {
@@ -750,6 +774,29 @@ html {
         background-color: white;
     }
 
+    .top_0 {
+        top: 0px;
+    }
+
+    .w_100 {
+        width: 100%;
+    }
+
+    .position_fixed {
+        position: fixed;
+    }
+
+    .top_0 {
+        top: 0;
+    }
+
+    .w_100 {
+        width: 100%;
+    }
+
+    .w_71 {
+        width: 71%;
+    }
 
 }
 
