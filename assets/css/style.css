@@ -33,7 +33,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
- 
+
 }
 
 
@@ -423,7 +423,7 @@ html {
     height: var(--bs-accordion-btn-icon-width);
     margin-left: auto;
     content: "";
-    background-image: url(../images/png/arrow_down.png);
+    background-image: url(../images/png/arrow_up.png);
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
@@ -529,11 +529,11 @@ html {
 
 .hover-2 {
     --c: #1095c1;
-    /* the color */
+
     --b: .1em;
-    /* border length*/
+
     --d: 20px;
-    /* the cube depth */
+
 
     --_s: calc(var(--d) + var(--b));
 
@@ -687,7 +687,7 @@ html {
         top: -152px;
     }
 
-
+    
 
 }
 
